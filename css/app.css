@@ -1,0 +1,178 @@
+/**************************
+ GENERAL STYLES
+***************************/
+
+body {
+  font: 1.2rem 'Open Sans', sans-serif;
+}
+
+a {
+  color: #f07d41;
+}
+
+/**************************
+ HEADER SECTION
+***************************/
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+#header-bg {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/paint.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 40px;
+  margin: 15px 0;
+}
+
+#title-container {
+  position: relative;
+  top: 20%;
+}
+
+#title-container h1 {
+  font: 6rem "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+#title-container h2 {
+  display: inline-block;
+  padding: 1.5rem;
+  background-color: #000;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+/**************************
+ ABOUT SECTION
+***************************/
+
+#about {
+  margin: 70px 0;
+}
+
+#intro {
+  overflow: auto;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#profile {
+  width: 175px;
+  height: 175px;
+  background-color: #ddd;
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+}
+
+#intro p {
+  display: inline;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/**************************
+ PORTFOLIO SECTION
+***************************/
+
+#portfolio {
+  background-color: #f7f7f7;
+  clear: left;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  padding: 80px 0 20px 0;
+  text-align: center;
+  font: 3.5rem "Ubuntu", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 275px;
+  height: 275px;
+  border: 1px solid #000;
+  margin: 15px 15px 80px 15px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project a:nth-child(2) {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/**************************
+ FOOTER SECTION
+***************************/
+
+footer {
+  background-image: url("../img/old_moon.png");
+  background-color: #b5b5b5;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+footer h2 {
+  color: #42403e;
+  margin: 0;
+  padding: 50px 0;
+  font: 400 3rem 'Ubuntu', sans-serif;
+  padding-bottom: 25px;
+}
+
+footer .email {
+  background-color: #b94000;
+  height: 75px;
+  width: 200px;
+  border-radius: 4px;
+  transition: background-color 1s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+footer .email:hover {
+  background-color: #ff5700;
+}
+
+footer i {
+  color: white;
+  padding-top: 5px;
+}
+
+/**************************
+ MEDIA QUERIES
+***************************/
+
+@media screen and (max-width: 575px) {
+  #profile {
+    float: none;
+    display: block;
+    margin: 0 auto 25px auto;
+  }
+
+  #intro p {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
